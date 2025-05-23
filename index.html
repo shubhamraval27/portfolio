@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Raval - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>  
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">SR</div>
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+        </button>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1 class="typing-text">Shubham Raval</h1>
+            <p class="subtitle">Android App Developer</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn">View Projects</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                <a href="" class="btn download-btn" target="_blank">
+                    <i class="fas fa-file-pdf"></i> View CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Career Objective</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-up">
+                    <p>I am an Android Developer who building simple and useful mobile apps. I enjoy turning ideas into real apps that people can use every day. I'm always learning new things to make my apps better. With a good understanding of Android development, I want to work on interesting projects, be part of a great team, and keep improving my skills through real experience..</p>
+                    <p>I have experience in designing and developing Android applications using Java, XML, and Firebase. I enjoy creating smooth and responsive user interfaces and working on features that make apps more useful and engaging. I am always eager to explore new tools and frameworks to stay updated with the latest trends in mobile development, and I look forward to contributing to projects that make a real difference to users.</p>
+                </div>
+            </div>
+
+            <h2 class="section-title" data-aos="fade-up">Certifications & Achievements</h2>
+            <div class="certifications-content" data-aos="fade-up">
+                <div class="certification-item" onclick="openCertificate('android')">
+                    <i class="fab fa-android"></i>
+                    <h3>Android Programming Certification</h3>
+                    <!-- <p class="view-cert">Click to view</p> -->
+                </div>
+                <div class="certification-item" onclick="openCertificate('hackathon')">
+                    <i class="fas fa-medal"></i>
+                    <h3>PU Code Hackathon 2.0</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <img id="certificateImage" src="" alt="Certificate">
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon android-icon">
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <div class="skill-content">
+                        <h3>Mobile Development</h3>
+                        <p>Android Studio, Java, XML</p>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon web-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="skill-content">
+                        <h3>Web Design</h3>
+                        <p>HTML, CSS, JavaScript</p>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon ms-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <div class="skill-content">
+                        <h3>Microsoft Tools</h3>
+                        <p>Excel, Word, Power BI</p>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-icon code-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="skill-content">
+                        <h3>Programming</h3>
+                        <p>Java, Python</p>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-icon design-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="skill-content">
+                        <h3>UI/UX Design</h3>
+                        <p>Figma, Canva</p>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="skill-icon db-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="skill-content">
+                        <h3>Databases</h3>
+                        <p>Firebase, MongoDB,MySQL</p>
+                    </div>
+                </div>
+                <div class="skill-card center-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="skill-icon tools-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="skill-content">
+                        <h3>Tools & Others</h3>
+                        <p>Office Tools, Git, GitHub</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Featured Project</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-category="android" data-aos="fade-up">
+                    <div class="project-info">
+                        <h3>Sahayak</h3>
+                        <p>The Sahayak Disaster Detection and Management System is a cutting-edge platform designed to mitigate the impact of disasters through the integration of advanced technology and robust management strategies. This system offers real-time disaster detection, comprehensive planning tools, and efficient communication channels to connect individuals with rescue organizations. By leveraging deep learning models with 98% accuracy</p>
+                        <a href="https://github.com/shubhamraval27/Sahayak" target="_blank" class="github-btn">
+                            <i class="fab fa-github"></i> View Repository
+                        </a>
+                        <div class="project-tags">
+                            <span>Android Studio</span>
+                            <span>Java</span>
+                            <span>XML</span>
+                            <span>Firebase</span>
+                            <span>AI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="android" data-aos="fade-up">
+                    <div class="project-info">
+                        <h3>CineIno: EntertainmentAPP</h3>
+                        <p>A sleek and user-friendly Android app that provides reviews and detailed information about the latest movies. Users can explore trending films, read summaries and ratings, and stay updated with the newest releases—all in one place.</p>
+                        <a href="https://github.com/shubhamraval27/Entertainment-App" target="_blank" class="github-btn">
+                            <i class="fab fa-github"></i> View Repository
+                        </a>
+                        <div class="project-tags">
+                            <span>Android Studio</span>
+                            <span>Java</span>
+                            <span>XML</span>
+                            <span>API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>shubhamraval2704@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+91 9313141720</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>Navsari, Gujarat, India</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/poojan-patel-7087761ba/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/shubhamraval27" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" data-aos="fade-left" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="user_name" required placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="user_email" required placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Enter subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+                    </div>
+                    <!-- <button type="submit" class="btn primary-btn contact-btn-center">Send Message</button> -->
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Shubham Raval. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
